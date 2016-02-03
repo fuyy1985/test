@@ -906,7 +906,6 @@ static RootViewController *me = nil;
         NSData *data = [NSURLConnection sendSynchronousRequest:urlRequest
                                              returningResponse:&response
                                                          error:&error];
-        [NSURLConnection sendAsynchronousRequest:urlRequest queue:nso completionHandler:<#^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError)handler#>]
         //解析
         GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:data options:0 error:nil];
         //获取根节点（Users）
